@@ -3,10 +3,37 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
     }
 
 body {
-    background-color: #8A51FC;
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    width: 375px;
+    background-color: #f4f4f4;
+    
+}
+header{
+    background-color: #1b83e2;
+    height: 66px; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+h1{
+    font-size: 24px;
+    color: #f4f4f4;
+    
 }
 
 .logo{
@@ -29,30 +56,49 @@ label {
     font-size: 14px;
 }
 
-select, input {
+select{
     background: #FFFFFF;
     border: 1px solid #BBBBBB;
     border-radius:4px;
     height: 48px;
+    display: block;
     width: 100%;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
     margin-bottom: 24px;
     padding-left: 18px;
-    font-weight: 700;
-    font-size: 16px;
-    color:#555555;
-    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 6px;
+    }
+
+input{
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius:4px;
+    height: 48px;
+    display: block;
+    width: 100%;
+    outline: none;
+    padding-left: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
 }
 
 button {
     background:#772FD3;
-    border-radius: 5px;
+    border-radius: 25px;
+    height: 48px;
     width: 100%;
     border: none;
-    height: 48px;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 700;
     cursor: pointer;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-top: 24px;
+    margin-bottom: 36px;
+   
 }
 
 button:hover {
@@ -65,30 +111,30 @@ button:active {
 
 section {
     border: 1px solid #772FD3;
-    border-radius: 20px;
-    margin-top: 36px;
-    padding: 12px;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    gap: 14px;
 }
+    
 
-.arrow-img {
-    margin: 15px 0;
-
-}
 
 .currency-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 3px;
 }
 
 .currency {
     color: #777777;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
 }
 
 .currency.value, .currency-value-to-convert {
